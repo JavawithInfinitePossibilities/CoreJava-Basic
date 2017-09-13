@@ -29,11 +29,11 @@ public class TestGeneric {
 		itemList.add("Pen");
 		itemList.add("pencil");
 		System.out.println(itemList);
-		ItemListExtends<Employee> emplyee = new ItemListExtends<Employee>(new Employee());
+		ItemListExtends<Employee> emplyee = new ItemListExtends<Employee>(new Employee(1, "ABC"));
 		emplyee.displayObject();
-		ItemListExtends<FinanceOfficer> financeOfficer = new ItemListExtends<FinanceOfficer>(new FinanceOfficer());
+		ItemListExtends<FinanceOfficer> financeOfficer = new ItemListExtends<FinanceOfficer>(new FinanceOfficer(2, "ABC"));
 		financeOfficer.displayObject();
-		ItemListExtends<Manager> manager = new ItemListExtends<Manager>(new Manager());
+		ItemListExtends<Manager> manager = new ItemListExtends<Manager>(new Manager(3, "ABC"));
 		manager.displayObject();
 		/*ItemListExtends<String> string = new ItemListExtends<String>(new String());
 		manager.displayObject();*/
@@ -42,5 +42,7 @@ public class TestGeneric {
 		steels.add(new UnbreakableSteel());
 		/*steels.add(new Iron());
 		steels.add(new metal());*/
+		System.out.println(Math.round(9*1000d));
+		System.out.println(20*5+10);
 	}
 }

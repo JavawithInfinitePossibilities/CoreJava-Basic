@@ -18,13 +18,14 @@ public class TestSequentialCollections {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		ArrayListClass arrayListClass=new ArrayListClass();
-		List<Integer> list=new ArrayList<Integer>();
+		ArrayListClass arrayListClass = new ArrayListClass();
+		List<Integer> list = new ArrayList<Integer>();
 		list.add(300);
 		list.add(400);
 		list.add(500);
 		arrayListClass.addAllArray(list);
 		System.out.println(list);
+		arrayListClass.getObject(new Object());
 	}
 
 }

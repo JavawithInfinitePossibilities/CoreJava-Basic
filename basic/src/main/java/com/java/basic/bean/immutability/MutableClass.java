@@ -35,6 +35,10 @@ public class MutableClass extends ImmutableClass {
 		System.out.println(immutableClass.getValue());
 		mutableClass.setRealValue(8);
 		System.out.println(immutableClass.getValue());
+		ImmutableClass immutableClass1=new ImmutableClass(9);
+		System.out.println(immutableClass1.hashCode());
+		immutableClass1=mutableClass;
+		System.out.println(immutableClass1.hashCode());
 	}
 
 }
